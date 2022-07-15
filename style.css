@@ -1,0 +1,51 @@
+.moviecard{
+    width: 253px;
+    height: 285px;
+    margin-right: 28px;
+    margin-bottom: 19px;
+    visibility: 10%;
+    position: static;
+    border-radius: 15px;
+    
+}
+
+.poster:hover{
+    border: 2px;
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    width: 253px;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+    /* border-bottom: 1px  double black; */
+    border-top:1px solid  black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #2b2a27;
+}
+
+.title:hover{
+    font-family: 'Roboto', sans-serif;
+    width: 253px;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    background-color:black;
+    border-radius: 8px;
+}
+
+.rating{
+    font-family: 'Roboto', sans-serif;
+    width: 253px;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px double black;
+    color: #2b2a27;
+}
+
+
+ 
