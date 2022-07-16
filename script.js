@@ -12,7 +12,7 @@ fetch(API_URL)
 }).then((data) => {
     for(i=0;i<data.results.length;i++){
     let element = 
-    `<div id="item${i}" class="w-[260px] flex-col justify-center mx-[28px] my-3 poster">
+    `<div id="item${i}" class="w-[260px] flex-col justify-center mx-[28px] my-3 poster b-1  ">
         <div class="">
             <img class="moviecard text-clip" src="`+IMG_BASE_URL+`${data.results[i].poster_path}">
         </div>
@@ -31,14 +31,24 @@ fetch(API_URL)
     button.addEventListener("click",() => {
         console.log("Searching....");
 
+        var movies = 0;
         for(i=0;i<data.results.length;i++){
             document.getElementById('item'+ i).hidden = true;
             if(data.results[i].title.includes(document.getElementsByTagName("input")[0].value))
             {
                 document.getElementById('item'+ i).hidden = false;
+                movies++;
+            }
+        }
+            if(movies == 0) 
+            {
+                element = 
+                `<p>Sorry, no movie found 🤷‍♂️
+                    Check your spelling </p>`
+                    container.innerHTML += element;
             }
             console.log("Done!")
-        }
+            console.log(movies);
     })
 }).catch(() => {
     let element = 

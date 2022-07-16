@@ -5,9 +5,16 @@
     margin-bottom: 19px;
     visibility: 10%;
     position: static;
-    border-radius: 15px;
-    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
+nav{
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+
 
 .poster:hover{
     border: 2px;
@@ -20,7 +27,6 @@
     width: 253px;
     padding: 20px 20px;
     margin-bottom: 10px;
-    /* border-bottom: 1px  double black; */
     border-top:1px solid  black;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
