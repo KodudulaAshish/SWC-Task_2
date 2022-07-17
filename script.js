@@ -26,6 +26,8 @@ fetch(API_URL)
     container.innerHTML += element;
     }
 
+    console.log("Got all movies 😁")
+
 
     var button = document.getElementById("search");
     button.addEventListener("click",() => {
